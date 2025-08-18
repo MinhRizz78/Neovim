@@ -1,0 +1,41 @@
+" Install Plugins
+call plug#begin("~/.config/nvim/plugins")
+	Plug 'preservim/nerdtree'
+	Plug 'ryanoasis/vim-devicons'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'navarasu/onedark.nvim'
+	Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'nvim-tree/nvim-web-devicons'
+	Plug 'windwp/nvim-autopairs'
+	Plug 'romgrk/barbar.nvim'
+	Plug 'lewis6991/gitsigns.nvim'
+	Plug 'Xuyuanp/nerdtree-git-plugin'
+	Plug 'voldikss/vim-floaterm'
+	Plug 'tpope/vim-dadbod'
+	Plug 'kristijanhusak/vim-dadbod-ui'
+	Plug 'kristijanhusak/vim-dadbod-completion'
+	Plug 'girishji/omnifunc-complete.vim'
+	Plug 'folke/noice.nvim'
+	Plug 'MunifTanjim/nui.nvim'
+	Plug 'rcarriga/nvim-notify'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+	Plug 'karb94/neoscroll.nvim'
+call plug#end()
+
+" Settings
+let settings_file='~/.config/nvim/settings/'
+exe 'source' settings_file.'nerdtree.vim'
+exe 'source' settings_file.'lualine.lua'
+exe 'source' settings_file.'autopairs.lua'
+exe 'source' settings_file.'tabline.vim'
+exe 'source' settings_file.'nerdtree-git.vim'
+exe 'source' settings_file.'floaterm.vim'
+exe 'source' settings_file.'omnifunc.vim'
+exe 'source' settings_file.'noice.lua'
+exe 'source' settings_file.'notify.lua'
+exe 'source' settings_file.'general.vim'
+exe 'source' settings_file.'fzf.vim'
+exe 'source' settings_file.'vim-dadbod.vim'
+exe 'source' settings_file.'neoscroll.lua'
