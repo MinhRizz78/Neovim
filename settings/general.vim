@@ -23,3 +23,7 @@ let g:onedark_config = {
 colorscheme onedark
 
 inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<CR>"
+nnoremap <silent><F2> <Cmd>BufferPrevious<CR>
+nnoremap <silent><F3> <Cmd>BufferNext<CR>
+nnoremap <silent> <leader>bd :bp \| sp \| bn \| bd<CR>
+nnoremap <leader>so :source %<CR>
